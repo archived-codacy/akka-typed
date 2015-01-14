@@ -1,0 +1,38 @@
+<configuration>
+
+    <conversionRule conversionWord="coloredLevel" converterClass="play.api.Logger$ColoredLevel"/>
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>${application.home}/logs/application.log</file>
+        <encoder>
+            <pattern>%date - [%coloredLevel] - [%logger] - %message %n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date - [%coloredLevel] - [%logger] - %message %n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="play" level="INFO"/>
+    <logger name="application" level="TRACE"/>
+    <logger name="Codacy" level="TRACE"/>
+    <logger name="PreCog" level="TRACE"/>
+    <logger name="Engine" level="TRACE"/>
+    <logger name="NativeEngine" level="TRACE"/>
+    <logger name="CodeParser" level="TRACE"/>
+    <logger name="RepositorySystem" level="TRACE"/>
+    <logger name="RepositoryListener" level="TRACE"/>
+    <logger name="Framework" level="TRACE"/>
+    <logger name="DependencyBuilder" level="TRACE"/>
+    <logger name="SystemInstruments" level="TRACE"/>
+    <logger name="ControllerInstruments" level="TRACE"/>
+    <logger name="scala.slick.session" level="INFO" />
+
+    <root level="WARN">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE"/>
+    </root>
+
+</configuration>
