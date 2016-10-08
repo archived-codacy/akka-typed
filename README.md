@@ -1,8 +1,8 @@
 ##Typed actors test
 ---
 
-####Create a actor
-To create a actor, simply call ComponentFactory.instance.getComponent[A], where type A will need to be a trait. The system will create the class defined in the config file for that trait (check application.conf).
+####Create an actor
+To create an actor, simply call ComponentFactory.instance.getComponent[A], where type A will need to be a trait. The system will create the class defined in the config file for that trait (check application.conf).
 
 When called with a class, the component factory will simply instantiate and return that specific type to the caller.
 
