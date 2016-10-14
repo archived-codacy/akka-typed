@@ -29,7 +29,7 @@ For example, add in class ComponentFactory:
     }
 
 ####Typed actors
-Actors are strongly typed and running with several instances, managed by a smallest mailbox routing logic (check CodacyRouter).
+Actors are strongly typed and running with several instances, managed by a smallest mailbox routing logic (check [CodacyRouter.scala](https://github.com/codacy/akka-typed/blob/master/app/dependencyBuilder/CodacyRouter.scala)).
 
 ## What is Codacy?
 
